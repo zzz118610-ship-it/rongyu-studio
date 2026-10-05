@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#8d4355">
+  <meta name="description" content="荣予化妆造型工作室 · 预约日历、客户档案、收款与出行管理">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="荣予妆程">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>荣予化妆造型工作室 · 妆程</title>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#calendar" aria-label="荣予化妆造型工作室首页"><span class="brand-mark">予</span><span><strong>荣予<span class="brand-dot"> · </span>妆程</strong><small>MAKEUP & STYLING STUDIO</small></span></a>
+    <div class="side-label">工作室管理</div>
+    <nav id="navigation" aria-label="主导航"></nav>
+    <div class="side-bottom"><div class="side-flower">✳</div><p>把日程安排妥当，<br>把美好留给每一位客人。</p><span class="local-badge"><i></i> 数据保存在本机</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="topbar-name">荣予化妆造型工作室<span> / </span><span id="page-label">预约日历</span></div><div class="topbar-right"><span id="today-label"></span><button class="avatar" data-action="settings" aria-label="打开工作室设置">予</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><span>荣予化妆造型工作室</span><span>认真记录 · 从容赴约</span></footer>
+  </div>
+  <dialog id="booking-dialog" aria-labelledby="booking-title"></dialog>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"></dialog>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="import-file" accept=".json,application/json" hidden>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
